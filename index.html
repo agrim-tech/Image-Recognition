@@ -1,0 +1,81 @@
+<html>
+
+<head>
+  <title>Image recognition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="container">
+
+    <center>
+
+      <h2 class="comfortaa">Image Identification</h2>
+
+      <p style="font-size: 22px;" class="comfortaa">Model is trained to identify the following objects: </p>
+
+
+
+      <h4 class="libre-franklin">Bottle</h4>
+
+      <hr>
+
+      <h4 class="libre-franklin">Pencil</h4>
+
+      <hr>
+
+      <h4 class="libre-franklin">Notebook</h4>
+
+      <hr>
+
+      <h4 class="libre-franklin">Scale</h4>
+
+      <hr>
+
+      <h3 class="libre-franklin">Webcam View - </h3>
+
+      <br>
+
+      <div id="webcam"></div>
+
+      <br>
+
+      <div id="output"></div>
+
+      <h3 class="libre-franklin">Object : </h3>   
+      <h3 class="libre-franklin">Accuracy : </h3>
+
+      <button class="btn btn-info libre-franklin">Capture</button>
+
+      <button class="btn btn-success libre-franklin">Detect</button>
+    </center>
+
+  </div>
+  <script src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+.libre-franklin{
+    font-family: 'Libre Franklin', sans-serif;
+}
+.ubuntu{
+    font-family: 'Ubuntu', sans-serif;
+}
+.comfortaa{
+    font-family: 'Comfortaa', cursive;
+}
+body{
+    background-color: #262626;
+    color: #dedede;
+}
+hr{
+    background-color: #cccccc;
+}
