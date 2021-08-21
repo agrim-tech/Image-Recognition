@@ -14,3 +14,11 @@ body{
 hr{
     background-color: #cccccc;
 }
+#result{
+    height:330px;
+    width:430px;
+}
+#webcam{
+    height:400px;
+    width:430px;   
+}
