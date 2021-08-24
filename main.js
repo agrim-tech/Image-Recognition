@@ -1,4 +1,4 @@
-var webcam;
+var webcam,img,confidence;
 
 Webcam.set({
     height:400,
@@ -23,4 +23,21 @@ classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models
 
 function modelloaded(){
     console.log("Any Sentence");
+}
+
+function check(){
+    img = document.getElementById("result");
+    classifier.classify(img,getresults);
+}
+
+function getresults(error,results){
+    if(error){
+        console.error(error);
+    }else{
+        console.log(results);
+        confidence = results[0].confidence*100;
+        document.getElementById("result1").innerHTML = "Object - "+results[0].label;
+        document.getElementById("result2").innerHTML = "Accuracy - "+confidence.toFixed(2)+"%";
+        console.log((Math.round(confidence*100))/(100));
+    }
 }
